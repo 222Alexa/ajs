@@ -1,10 +1,14 @@
 {
-  "name": "ajs",
+  "name": "@222alexa/ajs",
   "version": "1.0.0",
-  "description": "**Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.",
-  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Ddist/index.js)",
+  "description": "",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/222Alexa/ajs/issues"
   },
-  "homepage": "https://github.com/222Alexa/ajs#readme"
+  "homepage": "https://github.com/222Alexa/ajs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0"
+  }
 }
